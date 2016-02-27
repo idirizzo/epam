@@ -3,6 +3,7 @@
  <head>
    <title>Red Hot Chili Peppers</title>
    <style>
+       
        td:nth-of-type(1) {
            width: auto;
            margin:0 auto; 
@@ -10,7 +11,8 @@
            background-color:red;/* Цвет фона */
            color: white;   /* Цвет текста */   
        }
-       tr:nth-child(2n) {
+        
+       tr:nth-child(2n+3) {
            width: auto;
            margin:0 auto; 
            background-color:#eee;/* Цвет фона */          
@@ -27,7 +29,11 @@ a:first-letter {      /* только заглавные буквы в ссыл�
            font-weight: bolder; /* жирный */
            font-size: 300%; /* размер текста */
 }
-
+      
+[title*=",000,000"] { 
+    
+    color: red;
+}
        
    </style>
  </head>
