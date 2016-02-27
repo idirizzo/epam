@@ -3,21 +3,32 @@
  <head>
    <title>Red Hot Chili Peppers</title>
    <style>
-       tr td:nth-of-type(1) {
+       td:nth-of-type(1) {
            width: auto;
            margin:0 auto; 
            font-weight: bolder;/* Ширина текста */
            background-color:red;/* Цвет фона */
            color: white;   /* Цвет текста */   
        }
-       tr:nth-child(2n),a:nth-child(3) {
+       tr:nth-child(2n) {
            width: auto;
            margin:0 auto; 
            background-color:#eee;/* Цвет фона */          
        }
-input:checked + label {
+input:checked + label {   /* Отмеченый чекбокс, меняем цвет лейбл */
    color: red;
    }
+      a {display: block;}
+a:first-letter {      /* только заглавные буквы в ссылке */
+           text-decoration: none;/* убираю подчеркивание */
+           float: left;/* отделяю от основной ссылки */
+           width: auto;
+           margin:0 auto; 
+           font-weight: bolder; /* жирный */
+           font-size: 300%; /* размер текста */
+}
+
+       
    </style>
  </head>
  <body>
